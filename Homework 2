@@ -1,0 +1,52 @@
+#2.4.1.7 Apples
+
+J = 3 #John's Apples var
+M = 5 #Mary's Apples var
+A = 6 #Adam's Apples var
+
+total_apples = (J + M + A) #total var
+av_apples = ((J + M + A) / 3) #average var
+
+print(J, M, A) #display all apples
+print(total_apples) #display addition of all apples
+print(av_apples) #displays average apples
+
+#####################################################
+#2.4.1.9#
+
+kilometers = 12.25
+miles = 7.38
+furlongs = 10
+
+miles_to_kilometers = miles * 1.61 #1km is 1.61 times bigger than a mile
+kilometers_to_miles = kilometers / 1.61 #1mile is 1.61 times smaller than a Km
+furlongs_to_kilometers = furlongs * 0.201 #var for f_k
+kilometers_to_furlongs = kilometers * 4.97 #var for k_f
+furlongs_to_miles = furlongs * 0.125 #var for f_m
+miles_to_furlongs = miles * 7.99 #var for m_f
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+
+#furlong conversion table
+#1 mile is 7.99 furlongs
+#1 km is 4.97 furlongs
+#1 furlong is 0.125 miles
+#1 furlong is 0.201 km
+
+print(miles, "miles is", round(miles_to_furlongs, 2), "furlongs") #miles to furlongs
+print(kilometers, "kilometers is", round(kilometers_to_furlongs, 2), "furlongs") #Km to furlongs
+print(furlongs, "furlongs is", round(furlongs_to_miles, 2), "miles") #furlongs to miles
+print(furlongs, "furlongs is", round(furlongs_to_kilometers, 2), "kilometers") #furlongs to Km
+
+#######################################################################
+#2.1.4.10#
+
+x = -1 #input test value
+x = float(x) #changes x to a float
+
+y =( 3 * x ** 3) - (2 * x ** 2) + (3 * x - 1) #expanded out the expression ** for the powers
+
+print("y =", y) #print to show the value of y
+
+#######################################################################

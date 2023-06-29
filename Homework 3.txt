@@ -1,0 +1,39 @@
+
+#2.6.1.9
+
+val1 = float(input("Please input the first value: ")      # input a float value for variable a here
+val2 = float(input("Please input a second value: ")       # input a float value for variable b here
+
+addition = (val1 + val2)                                # Result of addition here
+subtraction = (val1 - val2)                             # Result of subtraction here
+multiplication = (val1 * val2)                          # Result of multiplication here
+division = (val1 / val2)                                # Result of division here
+expo = (val1 ** val2)                                   # Result of exponential here
+floor = (val1 // val2)                                  # Result of floor div here
+
+print(addition, subtraction, multiplication, division, sep ="\n")   #Print output of first 4 sums
+print (expo"\n", floor"\n")                                         #Print output of expo and floor sums
+
+print("\nThat's all, folks!")
+
+#########################################################################################
+#2.6.1.10
+
+x = float(input("Enter value for x: "))
+
+y= 1/(x+1/(x+1/(x + 1/x))) # bottom (x + 1/x), next level x+1/ the bottom and repeat to the top.
+
+print("y =", y)
+
+########################################################################################
+#2.6.1.11
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+mod1 =(mins + dura) % 60     # Works out how many minutes left over and not over 60 mins
+mod2 =(mins + dura) // 60    # Works out how many hours to be added 
+
+#print(mod2, mod1) 
+print("New time: ",((hour + mod2) % 24 ),":",mod1)  # prints New time with start hour + additional hours then using mod to make sure it doesnt go over 24hrs.
+

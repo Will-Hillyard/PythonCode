@@ -1,0 +1,29 @@
+
+income = float(input("Enter the annual income: "))				#Input the salary
+jury = input("Have you attended jury duty this year? Yes or No: ")		#Input if done jury service that year.
+if income <= 85528: 
+    tax = (((income /100)*18) -556.02)						#Working out the tax
+    print(tax)									        #Print the output
+
+elif income >=85529:
+    tax = (((income -85528) /100) *32) + 14839.02 				#Working out the tax
+    print(tax)									#Print the output
+
+tax = round(tax, 0)								#Rounds the tax
+print("The tax is:", tax, "thalers")						#Prints the amount of tax owed.
+
+#jury = input("Have you attended jury duty this year? Yes or No: ")		#Input if done jury service that year.
+
+if jury == "Yes" or jury == "yes":
+    jury = True
+    tax = (tax / 2)
+    print("Your total after jury duty tax reduction is :" , tax , "thalers")   	#If True jury duty then return deduction
+elif jury == "No" or jury == "no":
+    jury = False
+    tax = tax
+else:     
+    print("There is no change to your tax. Total: ",tax, "thalers")			#If False return previous value at tax.
+    
+if tax < 0.0:									#If under 0.0 there is no tax
+	tax = 0.0
+    print("You are not earning enough to pay tax!")

@@ -1,0 +1,22 @@
+secret_number = 777
+
+print(
+"""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
++================================+
+""")
+
+number = int(input("Enter a 3 digit number: "))			          #User guess of 3 digit number
+if number > 1000:						                                  # Number needs to be under 1000 or 3 digits
+    print("Please choose a 3 digit number!")			            #notification above 3 digits
+    number = int(input("Enter a THREE digit number!: "))	    #Re-input a guess
+
+while number != secret_number:					                      #start loop checking if guess is the same as secret number
+    print("Ha ha! You're stuck in my loop!")		            	#if false returns message stuck in loop
+    number = int(input("Please try again: "))		            	#try again input
+print(secret_number, "Well done, muggle! You are free now.")	#if match then print well done message

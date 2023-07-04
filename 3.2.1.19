@@ -1,0 +1,9 @@
+word = input("Please enter a word:  ")
+
+while word != "car":
+    print("You guessed wrong!")
+    word= input("Please try again...")
+    
+    if word == "car":
+       break 
+print("You have escaped the loop") 

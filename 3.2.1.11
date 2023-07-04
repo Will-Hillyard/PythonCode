@@ -1,0 +1,23 @@
+word_without_vowels = "" #variable
+user_word = input("Please enter a word:  ") #enter a word.  
+user_word = user_word.upper() #Change to upper case
+
+# Prompt the user to enter a word. DONE.
+# and assign it to the user_word variable. DONE.
+
+
+for letter in user_word:
+    if letter == "A":  #look for letter A, if there skip it.
+        continue
+    elif letter == "E":  #look for letter E, if there skip it.
+        continue
+    elif letter == "I":  #look for letter I, if there skip it.
+        continue
+    elif letter == "O":  #look for letter O, if there skip it.
+        continue
+    elif letter == "U":  #look for letter U, if there skip it.
+        continue
+   else:
+        word_without_vowels += letter  # add the remaining letters to word_without_vowels
+ 
+print(word_without_vowels) # print the letters

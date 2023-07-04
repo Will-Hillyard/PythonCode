@@ -1,0 +1,19 @@
+# Prompt the user to enter a word
+# and assign it to the user_word variable.
+
+user_word = input("Please enter a word:  ") # Enter a word.
+user_word = user_word.upper()  # Change string to upper case.
+	
+for letter in user_word:
+	if letter == "A":  #look for letter A, if there skip it.
+        	continue
+    	elif letter == "E": #look for letter E, if there skip it.
+        	continue
+    	elif letter == "I": #look for letter I, if there skip it.
+        	continue
+    	elif letter == "O": #look for letter O, if there skip it.
+        	continue
+    	elif letter == "U": #look for letter U, if there skip it.
+        	continue
+    	else:
+        	print(letter) #Print all remaining letters.
